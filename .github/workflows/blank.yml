@@ -24,7 +24,7 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-      - run: curl -fL https://getcli.jfrog.io | sh
+      - run: "curl -fL https://getcli.jfrog.io | sh"
 
       # - uses: jfrog/setup-jfrog-cli@v1
       - run: jfrog --version
